@@ -1,4 +1,5 @@
-* Settings *
+*** Settings *** 
+
 Library  SeleniumLibrary
 
 * Variables *
