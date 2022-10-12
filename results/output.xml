@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.8 on win32)" generated="20221012 14:55:31.813" rpa="false" schemaversion="3">
+<suite id="s1" name="Robotframework" source="C:\Users\Nique\Desktop\robotframework">
+<suite id="s1-s1" name="Bdd" source="C:\Users\Nique\Desktop\robotframework\bdd.robot">
+<test id="s1-s1-t1" name="Cénario 1: Executar Video no Site do Youtube" line="41">
+<kw name="Dado que eu acesso o youtube">
+<kw name="Open Browser">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<msg timestamp="20221012 14:55:31.844" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20221012 14:55:31.843" endtime="20221012 14:55:31.845"/>
+</kw>
+<status status="FAIL" starttime="20221012 14:55:31.842" endtime="20221012 14:55:31.847"/>
+</kw>
+<kw name="Quando digito o nome da musica">
+<status status="NOT RUN" starttime="20221012 14:55:31.847" endtime="20221012 14:55:31.847"/>
+</kw>
+<kw name="E clico no botão buscar">
+<status status="NOT RUN" starttime="20221012 14:55:31.848" endtime="20221012 14:55:31.848"/>
+</kw>
+<kw name="E clico na primeira opção da lista">
+<status status="NOT RUN" starttime="20221012 14:55:31.848" endtime="20221012 14:55:31.848"/>
+</kw>
+<kw name="Então o video é executado">
+<status status="NOT RUN" starttime="20221012 14:55:31.848" endtime="20221012 14:55:31.848"/>
+</kw>
+<status status="FAIL" starttime="20221012 14:55:31.840" endtime="20221012 14:55:31.849">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20221012 14:55:31.834" endtime="20221012 14:55:31.850"/>
+</suite>
+<status status="FAIL" starttime="20221012 14:55:31.816" endtime="20221012 14:55:31.852"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robotframework">Robotframework</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Bdd">Robotframework.Bdd</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221012 14:55:31.837" level="ERROR">Error in file 'C:\Users\Nique\Desktop\robotframework\bdd.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Nique\Desktop\robotframework\lib
+  C:\Users\Nique\Desktop\robotframework\resources
+  C:\Program Files\Laubwerk\Python
+  C:\Users\Nique\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\Nique\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\Nique\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\Nique\AppData\Local\Programs\Python\Python310
+  C:\Users\Nique\AppData\Local\Programs\Python\Python310\lib\site-packages
+  C:\Users\Nique\.vscode\extensions\d-biehl.robotcode-0.12.1</msg>
+</errors>
+</robot>
