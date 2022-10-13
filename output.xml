@@ -1,90 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.5 on win32)" generated="20221012 14:54:05.933" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.5 on win32)" generated="20221013 09:00:24.122" rpa="false" schemaversion="3">
 <suite id="s1" name="Bdd" source="C:\Users\Nique\Desktop\robotframework\bdd.robot">
-<test id="s1-t1" name="Cénario 1: Executar Video no Site do Youtube" line="41">
+<test id="s1-t1" name="Cénario 1: Executar Video no Site do Youtube" line="42">
 <kw name="Dado que eu acesso o youtube">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221012 14:54:06.076" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
-<status status="PASS" starttime="20221012 14:54:06.075" endtime="20221012 14:54:09.526"/>
+<msg timestamp="20221013 09:00:24.356" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
+<status status="PASS" starttime="20221013 09:00:24.356" endtime="20221013 09:00:28.476"/>
 </kw>
-<status status="PASS" starttime="20221012 14:54:06.075" endtime="20221012 14:54:09.527"/>
+<status status="PASS" starttime="20221013 09:00:24.356" endtime="20221013 09:00:28.477"/>
 </kw>
 <kw name="Quando digito o nome da musica">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${Input_Pesquisa}</arg>
 <arg>${NomeDaMusica}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221012 14:54:09.528" level="INFO">Typing text '180 Alok' into text field '//input[@id="search"]'.</msg>
-<status status="PASS" starttime="20221012 14:54:09.527" endtime="20221012 14:54:09.622"/>
+<msg timestamp="20221013 09:00:28.478" level="INFO">Typing text '180 Alok' into text field '//input[@id="search"]'.</msg>
+<status status="PASS" starttime="20221013 09:00:28.478" endtime="20221013 09:00:28.583"/>
 </kw>
-<status status="PASS" starttime="20221012 14:54:09.527" endtime="20221012 14:54:09.622"/>
+<status status="PASS" starttime="20221013 09:00:28.477" endtime="20221013 09:00:28.583"/>
 </kw>
 <kw name="E clico no botão buscar">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Button_Pesquisa}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221012 14:54:09.623" level="INFO">Clicking element '//button[@id="search-icon-legacy"]'.</msg>
-<status status="PASS" starttime="20221012 14:54:09.623" endtime="20221012 14:54:09.705"/>
+<msg timestamp="20221013 09:00:28.584" level="INFO">Clicking element '//button[@id="search-icon-legacy"]'.</msg>
+<status status="PASS" starttime="20221013 09:00:28.584" endtime="20221013 09:00:28.690"/>
 </kw>
-<status status="PASS" starttime="20221012 14:54:09.623" endtime="20221012 14:54:09.705"/>
+<status status="PASS" starttime="20221013 09:00:28.584" endtime="20221013 09:00:28.690"/>
 </kw>
 <kw name="E clico na primeira opção da lista">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Primeiro}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221012 14:54:09.706" endtime="20221012 14:54:10.763"/>
+<status status="PASS" starttime="20221013 09:00:28.698" endtime="20221013 09:00:29.654"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Primeiro}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221012 14:54:10.763" level="INFO">Clicking element '(//yt-formatted-string[@class="style-scope ytd-video-renderer"])[1]'.</msg>
-<status status="PASS" starttime="20221012 14:54:10.763" endtime="20221012 14:54:10.843"/>
+<msg timestamp="20221013 09:00:29.654" level="INFO">Clicking element '(//yt-formatted-string[@class="style-scope ytd-video-renderer"])[1]'.</msg>
+<status status="PASS" starttime="20221013 09:00:29.654" endtime="20221013 09:00:29.751"/>
 </kw>
-<status status="PASS" starttime="20221012 14:54:09.705" endtime="20221012 14:54:10.843"/>
+<status status="PASS" starttime="20221013 09:00:28.698" endtime="20221013 09:00:29.751"/>
 </kw>
 <kw name="Então o video é executado">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Prova}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221012 14:54:10.844" endtime="20221012 14:54:11.879"/>
+<msg timestamp="20221013 09:00:39.619" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00611ED3+2236115]
+	Ordinal0 [0x005A92F1+1807089]
+	Ordinal0 [0x004B66FD+812797]
+	Ordinal0 [0x0049DFFA+712698]
+	Ordinal0 [0x0050506B+1134699]
+	Ordinal0 [0x0051514A+1200458]
+	Ordinal0 [0x005018A6+1120422]
+	Ordinal0 [0x004DA73D+960317]
+	Ordinal0 [0x004DB71F+964383]
+	GetHandleVerifier [0x008BE7E2+2743074]
+	GetHandleVerifier [0x008B08D4+2685972]
+	GetHandleVerifier [0x006A2BAA+532202]
+	GetHandleVerifier [0x006A1990+527568]
+	Ordinal0 [0x005B080C+1837068]
+	Ordinal0 [0x005B4CD8+1854680]
+	Ordinal0 [0x005B4DC5+1854917]
+	Ordinal0 [0x005BED64+1895780]
+	BaseThreadInitThunk [0x7610FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77C97BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77C97B8E+238]
+</msg>
+<msg timestamp="20221013 09:00:39.622" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00611ED3+2236115]
+	Ordinal0 [0x005A92F1+1807089]
+	Ordinal0 [0x004B66FD+812797]
+	Ordinal0 [0x0049DFFA+712698]
+	Ordinal0 [0x0050506B+1134699]
+	Ordinal0 [0x0051514A+1200458]
+	Ordinal0 [0x005018A6+1120422]
+	Ordinal0 [0x004DA73D+960317]
+	Ordinal0 [0x004DB71F+964383]
+	GetHandleVerifier [0x008BE7E2+2743074]
+	GetHandleVerifier [0x008B08D4+2685972]
+	GetHandleVerifier [0x006A2BAA+532202]
+	GetHandleVerifier [0x006A1990+527568]
+	Ordinal0 [0x005B080C+1837068]
+	Ordinal0 [0x005B4CD8+1854680]
+	Ordinal0 [0x005B4DC5+1854917]
+	Ordinal0 [0x005BED64+1895780]
+	BaseThreadInitThunk [0x7610FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77C97BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77C97B8E+238]
+</msg>
+<status status="FAIL" starttime="20221013 09:00:29.752" endtime="20221013 09:00:39.671"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${Prova}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20221012 14:54:12.021" level="INFO">Element '//yt-formatted-string[contains(text(),"Compartilhar")]' is displayed.</msg>
-<status status="PASS" starttime="20221012 14:54:11.879" endtime="20221012 14:54:12.021"/>
+<status status="NOT RUN" starttime="20221013 09:00:39.671" endtime="20221013 09:00:39.671"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221012 14:54:13.031" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20221012 14:54:12.022" endtime="20221012 14:54:13.031"/>
+<status status="NOT RUN" starttime="20221013 09:00:39.671" endtime="20221013 09:00:39.671"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221012 14:54:13.031" endtime="20221012 14:54:15.298"/>
+<status status="NOT RUN" starttime="20221013 09:00:39.671" endtime="20221013 09:00:39.671"/>
 </kw>
-<status status="PASS" starttime="20221012 14:54:10.844" endtime="20221012 14:54:15.298"/>
+<status status="FAIL" starttime="20221013 09:00:29.752" endtime="20221013 09:00:39.672"/>
 </kw>
-<status status="PASS" starttime="20221012 14:54:06.075" endtime="20221012 14:54:15.299"/>
+<status status="FAIL" starttime="20221013 09:00:24.355" endtime="20221013 09:00:39.672">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00611ED3+2236115]
+	Ordinal0 [0x005A92F1+1807089]
+	Ordinal0 [0x004B66FD+812797]
+	Ordinal0 [0x0049DFFA+712698]
+	Ordinal0 [0x0050506B+1134699]
+	Ordinal0 [0x0051514A+1200458]
+	Ordinal0 [0x005018A6+1120422]
+	Ordinal0 [0x004DA73D+960317]
+	Ordinal0 [0x004DB71F+964383]
+	GetHandleVerifier [0x008BE7E2+2743074]
+	GetHandleVerifier [0x008B08D4+2685972]
+	GetHandleVerifier [0x006A2BAA+532202]
+	GetHandleVerifier [0x006A1990+527568]
+	Ordinal0 [0x005B080C+1837068]
+	Ordinal0 [0x005B4CD8+1854680]
+	Ordinal0 [0x005B4DC5+1854917]
+	Ordinal0 [0x005BED64+1895780]
+	BaseThreadInitThunk [0x7610FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77C97BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77C97B8E+238]
+</status>
 </test>
-<status status="PASS" starttime="20221012 14:54:05.934" endtime="20221012 14:54:15.300"/>
+<status status="FAIL" starttime="20221013 09:00:24.124" endtime="20221013 09:00:39.676"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Bdd">Bdd</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Bdd">Bdd</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20221013 09:00:39.619" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00611ED3+2236115]
+	Ordinal0 [0x005A92F1+1807089]
+	Ordinal0 [0x004B66FD+812797]
+	Ordinal0 [0x0049DFFA+712698]
+	Ordinal0 [0x0050506B+1134699]
+	Ordinal0 [0x0051514A+1200458]
+	Ordinal0 [0x005018A6+1120422]
+	Ordinal0 [0x004DA73D+960317]
+	Ordinal0 [0x004DB71F+964383]
+	GetHandleVerifier [0x008BE7E2+2743074]
+	GetHandleVerifier [0x008B08D4+2685972]
+	GetHandleVerifier [0x006A2BAA+532202]
+	GetHandleVerifier [0x006A1990+527568]
+	Ordinal0 [0x005B080C+1837068]
+	Ordinal0 [0x005B4CD8+1854680]
+	Ordinal0 [0x005B4DC5+1854917]
+	Ordinal0 [0x005BED64+1895780]
+	BaseThreadInitThunk [0x7610FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77C97BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77C97B8E+238]
+</msg>
 </errors>
 </robot>
